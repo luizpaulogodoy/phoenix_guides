@@ -1,12 +1,12 @@
-The aim of this first guide is to get a Phoenix application up and running as quickly as possible.
+O objetivo deste primeiro guia é obter uma aplicação Phoenix rodando o mais rápido possível.
 
-Before we begin, please take a minute to read the [Installation Guide](http://www.phoenixframework.org/docs/installation). By installing any necessary dependencies beforehand, we'll be able to get our application up and running smoothly.
+Antes de começar, por favor, tire um minuto para ler o [Guia de instalação](http://www.phoenixframework.org/docs/installation). Ao instalar todas as dependências necessárias de antemão, nós vamos ser capazes de obter o nosso aplicativo instalado e funcionando sem problemas.
 
-At this point, we should have Elixir, Erlang, Hex, and the Phoenix archive installed. We should also have PostgreSQL and node.js installed to build a default application.
+Neste ponto, devemos ter Elixir, Erlang, Hex, eo  Phoenix instalado. Nós também devemos ter PostgreSQL e node.js instalado para construir um aplicativo padrão.
 
-Ok, we're ready to go!
+Ok, vamos lá!
 
-We can run `mix phoenix.new` from any directory in order to bootstrap our Phoenix application. Phoenix will accept either an absolute or relative path for the directory of our new project. Assuming that the name of our application is `hello_phoenix`, either of these will work.
+Nós podemos rodar `mix phoenix.new` de qualquer diretório em ordem para criar nossa aplicação Phoenix. Phoenix aceitará um caminho absoluto ou relativo para o diretório do nosso novo projeto. Supondo-se que o nome de nosso aplicativo é `ola_phoenix`, qualquer um destes comandos irá funcionar.
 
 ```console
 $ mix phoenix.new /Users/me/work/elixir-stuff/hello_phoenix
