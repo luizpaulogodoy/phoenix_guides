@@ -1,11 +1,12 @@
-### Welcome to the Phoenix Guides!
+### Bem vindo ao Phoenix Guides!
 
-This is the workspace for the official Phoenix Guides on [http://www.phoenixframework.org/](http://www.phoenixframework.org/). The material here is still a work in progress, but it is becoming more complete all the time.
+Esta é uma versão não oficial traduzida dos guias do Phoenix Guides [http://www.phoenixframework.org/](http://www.phoenixframework.org/).
+O material aqui ainda é um trabalho em andamento, mas é cada vez mais completo o tempo todo.
 
-Phoenix itself is moving fast. Those of us who have contributed to these guides are doing our best to keep up with the changes. Wherever possible, we have noted differences between what works on the master branch and what works on the latest stable release. Still, we may miss things.
+Phoenix está se movimentando rapidamente.  Aqueles que tem contribuído para estes guias estão fazendo o melhor para se manter atualizado com as alterações. Sempre que possível, observamos diferenças entre o funcionamento da branch master em relação a última versão estável. Ainda assim, podemos perder alguma coisa.
 
-The good news is, we love pull requests! Please do submit additions or corrections. The guides will be better for us all.
+A boa notícia é que nós amamos pull requests! Por favor, nos envie as adições ou correções. Assimo s guias serão melhores para todos nós.
 
-##### In Case You Were Wondering:
+##### No caso você estiver pensando:
 
-The non-standard 'A_filename' format is intended to roughly show the order the guides should appear when there is a site with actual navigation.
+O formato non-standard 'A_nome_do_arquivo' destina-se a mostrar mais ou menos a ordem das guias deve aparecer quando existe um site com navegação real.
