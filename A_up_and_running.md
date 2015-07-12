@@ -16,9 +16,7 @@ $ mix phoenix.new /Users/me/work/elixir-stuff/ola_phoenix
 $ mix phoenix.new ola_phoenix
 ```
 
-> A note about [Brunch.io](http://brunch.io/) before we begin: Phoenix will use Brunch.io for asset management by default. Brunch.io's dependencies are installed via the node package manager, not mix. Phoenix will prompt us to install them at the end of the `mix phoenix.new` task. If we say "no" at that point, and if we don't install those dependencies later with `npm install`, our application will raise errors when we try to start it, and our assets may not load properly. If we don't want to use Brunch.io at all, we can simply pass `--no-brunch` to `mix phoenix.new`.
-
-Uma nota sobre [Brunch.io](http://brunch.io/) antes de começarmos: Phoenix usará Brunch.io para gerenciamento de assets por padrão. Dependências de Brunch.io são instalados através do gerenciador de pacotes do node, não pelo mix. Phoenix irá pedir-nos para instalá-los no final do comando `mix phoenix.new`. Se dizemos "no" a esse ponto, e se nós não instalarmos essas dependências mais tarde com `npm install`, a nossa aplicação vai gerar erros quando for iniciada, e os nossos assets podem não carregar corretamente. Se não quiser usar Brunch.io em tudo, podemos simplesmente passar `--no-brunch` para `mix phoenix.new`.
+> Uma nota sobre [Brunch.io](http://brunch.io/) antes de começarmos: Phoenix usará Brunch.io para gerenciamento de assets por padrão. Dependências de Brunch.io são instalados através do gerenciador de pacotes do node, não pelo mix. Phoenix irá pedir-nos para instalá-los no final do comando `mix phoenix.new`. Se dizemos "no" a esse ponto, e se nós não instalarmos essas dependências mais tarde com `npm install`, a nossa aplicação vai gerar erros quando for iniciada, e os nossos assets podem não carregar corretamente. Se não quiser usar Brunch.io em tudo, podemos simplesmente passar `--no-brunch` para `mix phoenix.new`.
 
 Agora que estamos prontos, vamos chamar `phoenix.new` com um caminho relativo.
 
