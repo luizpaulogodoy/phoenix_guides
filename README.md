@@ -5,7 +5,7 @@ O material aqui ainda é um trabalho em andamento, mas é cada vez mais completo
 
 Phoenix está se movimentando rapidamente.  Aqueles que tem contribuído para estes guias estão fazendo o melhor para se manter atualizado com as alterações. Sempre que possível, observamos diferenças entre o funcionamento da branch master em relação a última versão estável. Ainda assim, podemos perder alguma coisa.
 
-A boa notícia é que nós amamos pull requests! Por favor, nos envie as adições ou correções. Assimo s guias serão melhores para todos nós.
+A boa notícia é que nós amamos pull requests! Por favor, nos envie as adições ou correções. Assim os guias serão melhores para todos nós.
 
 ##### No caso você estiver pensando:
 
