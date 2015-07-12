@@ -9,24 +9,26 @@ Ok, vamos lá!
 Nós podemos rodar `mix phoenix.new` de qualquer diretório em ordem para criar nossa aplicação Phoenix. Phoenix aceitará um caminho absoluto ou relativo para o diretório do nosso novo projeto. Supondo-se que o nome de nosso aplicativo é `ola_phoenix`, qualquer um destes comandos irá funcionar.
 
 ```console
-$ mix phoenix.new /Users/me/work/elixir-stuff/hello_phoenix
+$ mix phoenix.new /Users/me/work/elixir-stuff/ola_phoenix
 ```
 
 ```console
-$ mix phoenix.new hello_phoenix
+$ mix phoenix.new ola_phoenix
 ```
 
 > A note about [Brunch.io](http://brunch.io/) before we begin: Phoenix will use Brunch.io for asset management by default. Brunch.io's dependencies are installed via the node package manager, not mix. Phoenix will prompt us to install them at the end of the `mix phoenix.new` task. If we say "no" at that point, and if we don't install those dependencies later with `npm install`, our application will raise errors when we try to start it, and our assets may not load properly. If we don't want to use Brunch.io at all, we can simply pass `--no-brunch` to `mix phoenix.new`.
 
-Now that we're ready, let's call `phoenix.new` with a relative path.
+Uma nota sobre [Brunch.io](http://brunch.io/) antes de começarmos: Phoenix usará Brunch.io para gerenciamento de assets por padrão. Dependências de Brunch.io são instalados através do gerenciador de pacotes do node, não pelo mix. Phoenix irá pedir-nos para instalá-los no final do comando `mix phoenix.new`. Se dizemos "no" a esse ponto, e se nós não instalarmos essas dependências mais tarde com `npm install`, a nossa aplicação vai gerar erros quando for iniciada, e os nossos assets podem não carregar corretamente. Se não quiser usar Brunch.io em tudo, podemos simplesmente passar `--no-brunch` para `mix phoenix.new`.
+
+Agora que estamos prontos, vamos chamar `phoenix.new` com um caminho relativo.
 
 ```console
-$ mix phoenix.new hello_phoenix
-* creating hello_phoenix/README.md
+$ mix phoenix.new ola_phoenix
+* creating ola_phoenix/README.md
 . . .
 ```
 
-Phoenix generates the directory structure and all the files we will need for our application. When it's done, it will ask us if we want it to install our dependencies for us. Let's say yes to that.
+Phoenix gera a estrutura de diretórios e todos os arquivos que vamos precisar para a nossa aplicação. Quando isto é feito, ele vai perguntar se queremos  instalar dependências. Vamos dizer "yes" para isso.
 
 ```console
 Fetch and install dependencies? [Yn] y
@@ -34,7 +36,7 @@ Fetch and install dependencies? [Yn] y
 * running mix deps.get
 ```
 
-Once our dependencies are installed, the task will prompt us to change into our project directory and start our application.
+Uma vez que nossas dependências estão instaladas, a tarefa vamos entrar em nosso diretório do projeto e começar a nossa aplicação.
 
 ```console
 We are all set! Run your Phoenix application:
@@ -47,21 +49,21 @@ You can also run it inside IEx (Interactive Elixir) as:
 $ iex -S mix phoenix.server
 ```
 
-Let's do that now.
+Agora faça isso.
 
 ```console
 $ cd hello_phoenix
 $ mix phoenix.server
 ```
 
-> Note: if this is the first time you are running this command, Phoenix may also ask to install Rebar. Go ahead with the installation as Rebar is used to build Erlang packages.
+> Nota: se esta é a primeira vez que você estiver executando este comando, Phoenix também pode pedir para instalar Rebar. Vá em frente com a instalação como Rebar é usado para construir pacotes de Erlang.
 
-By default Phoenix accepts requests on port 4000. If we point our favorite web browser at [http://localhost:4000](http://localhost:4000), we should see the Phoenix Framework welcome page.
+Por padrão Phoenix roda na porta 4000. Acessando pelo navegador [http://localhost:4000](http://localhost:4000), você deverá ver a página de boas-vindas Phoenix Framework.
 
 ![Phoenix Welcome Page](/images/welcome-to-phoenix.png)
 
-If your screen looks like the image above, congratulations! You now have a working Phoenix application.
+Se a tela se parecer com a imagem acima, parabéns! Agora você tem um aplicativo Phoenix rodando.
 
-Locally, our application is running in an iex session. To stop it, we hit ctrl-c twice, just as we would to stop iex normally.
+Localmente, o nosso aplicativo está sendo executado em uma sessão iex. Para pará-lo, nós pressionamos Ctrl+C duas vezes, assim como faríamos para parar iex normalmente.
 
-The next step is customizing our application just a bit to give us a sense of how a Phoenix app is put together.
+O próximo passo é personalizar a sua aplicação apenas um pouco para nos dar uma noção de como um aplicativo Phoenix é montado.
