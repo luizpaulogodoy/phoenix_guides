@@ -1,7 +1,7 @@
-Our task for this guide is to add two new pages to our Phoenix application. One will be a purely static page, and the other will take part of the path from the url as input and pass it through to a template for display. Along the way, we will gain familiarity with the basic components of a Phoenix application: the router, controllers, views and templates.
+Nossa tarefa para este guia é adicionar duas novas páginas para a nossa aplicação Phoenix. Uma delas será uma página puramente estática, e os outros vão tomar parte do caminho da url como entrada e passá-lo através de um template para o display. Ao longo do caminho, vamos ganhar familiaridade com os componentes básicos de um aplicativo de Phoenix: as rotas, controllers, views e templates.
 
 
-When Phoenix generates a new application for us, it builds a top level directory structure like this.
+Quando Phoenix gera uma nova aplicação para nós, ele constrói uma estrutura de diretório de nível superior como isto.
 
 ```text
 ├── _build
@@ -13,7 +13,7 @@ When Phoenix generates a new application for us, it builds a top level directory
 ├── web
 ```
 
-Most of our work in this guide will be in the `web` directory, which looks like this when expanded.
+A maior parte do nosso trabalho neste guia estará no diretório `web`, que se parece com isso quando expandido.
 
 ```text
 ├── channels
@@ -33,9 +33,9 @@ Most of our work in this guide will be in the `web` directory, which looks like 
 └── web.ex
 ```
 
-All of the files which are currently in the controllers, templates and views directories are there to create the "Welcome to Phoenix!" page we saw in the last guide. We will see how we can re-use some of that code shortly.
+Todos os arquivos que estão atualmente nos diretórios controllers, models e views estão lá para criar a página "Welcome to Phoenix!" que vimos no último guia. Vamos ver como podemos voltar a usar parte desse código em breve.
 
-All of our application's static assets live in `priv/static` in the directory appropriate for each type of file - css, images or js. We place assets that require a build phase into `web/static`, and the source files are built into their respective `app.js` / `app.css` bundles within `priv/static`. We won't be making any changes here for now, but it is good to know where to look for future reference.
+Todos os assets estáticos da nossa aplicação estão em `priv/static` no diretório apropriado para cada tipo de arquivo - css, imagens ou js. Nós colocamos assets que exigem uma fase de build em `web/static`, e os arquivos de origem são construídos em suas respectivas`app.js` / `app.css` pacotes dentro do `priv/static`. Nós não iremos fazer quaisquer alterações aqui, por hora, mas é bom saber onde estão para referência futura.
 
 ```text
 priv
@@ -55,7 +55,7 @@ web
         └── phoenix.js
 ```
 
-The `lib` directory also contains files we should know about. Our application's endpoint is at `lib/hello_phoenix/endpoint.ex`, and our application file (which starts our application and its supervision tree) is at `lib/hello_phoenix.ex`.
+O diretório `lib` também contém arquivos que deve conhecer. O endpoint de Nossa aplicação fica em `lib/hello_phoenix/endpoint.ex`, e nosso arquivo de aplicativo (que começa a nossa aplicação e sua árvore de supervisão) está em `lib/ hello_phoenix.ex`.
 
 ```text
 lib
@@ -64,9 +64,9 @@ lib
 │   └── repo.ex
 └── hello_phoenix.ex
 ```
-Enough prep, let's get on with our first new Phoenix page!
+Pararado o suficiente, vamos começar com a nossa primeira nova página Phoenix!
 
-### A New Route
+### Uma nova rota
 
 Routes map unique HTTP verb/path pairs to controller/action pairs which will handle them. Phoenix generates a router file for us in new applications at `web/router.ex`. This is where we will be working for this section.
 
