@@ -64,21 +64,21 @@ lib
 │   └── repo.ex
 └── hello_phoenix.ex
 ```
-Pararado o suficiente, vamos começar com a nossa primeira nova página Phoenix!
+Preparado o suficiente, vamos começar com a nossa primeira nova página Phoenix!
 
 ### Uma nova rota
 
-Routes map unique HTTP verb/path pairs to controller/action pairs which will handle them. Phoenix generates a router file for us in new applications at `web/router.ex`. This is where we will be working for this section.
+Routes mapeia pares únicos de HTTP verbo/path para controlador/ação que irá lidar com ele.  Phoenix gera um arquivo de rotas para nós em novas aplicações em `web/router.ex`. Este é o lugar onde nós estaremos trabalhando para esta seção.
 
-The route for our "Welcome to Phoenix!" page from the previous Up And Running Guide looks like this.
+A rota para o nosso "Welcome to Phoenix!" A página do  guia "Up And Running" anterior se parece com isso.
 ```elixir
 get "/", PageController, :index
 ```
-Let's digest what this route is telling us. Visiting [http://localhost:4000/](http://localhost:4000/) issues an http GET request to the root path. All requests like this will be handled by the `index` function in the `HelloPhoenix.PageController` module defined in `web/controllers/page_controller.ex`.
+Vamos ver o que esse caminho nos diz. Visitar [http://localhost:4000/] (http://localhost:4000/) emite uma solicitação HTTP GET para o caminho raiz. Todos os pedidos como este serão tratados pela função `index` no módulo `HelloPhoenix.PageController` definido em `web/controllers/page_controller.ex`.
 
-The page we are going to build will simply say "Hello World, from Phoenix!" when we point our browser to [http://localhost:4000/hello](http://localhost:4000/hello).
+A página que está indo para construir vai simplesmente dizer "Hello World, from Phoenix!" quando apontamos o nosso navegador para [http://localhost:4000/hello] (http://localhost:4000/hello).
 
-The first thing we need to do to create that page is define a route for it. Let's open up `web/router.ex` in a text editor. It should currently look like this.
+A primeira coisa que precisamos fazer para criar essa página é definir uma rota para ela. Vamos abrir `web/router.ex` em um editor de texto. Deve atualmente se parecer com isso.
 
 ```elixir
 defmodule HelloPhoenix.Router do
