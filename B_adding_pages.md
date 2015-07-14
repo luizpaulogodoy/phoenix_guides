@@ -108,7 +108,7 @@ defmodule HelloPhoenix.Router do
 end
 
 ```
-For now, we'll ignore the pipelines and the use of `scope` here and just focus on adding a route. (We cover these topics in the [Routing Guide](http://www.phoenixframework.org/docs/routing), if you're curious.)
+Por hora, vamos ignorar os pipelines ea utilização de `scope` aqui e se concentrar apenas na adição de uma rota. (Cobrimos esse tópico no [Guia de Rotas](http://www.phoenixframework.org/docs/routing), se você está curioso.)
 
 Let's add a new route to the router that maps a `GET` request for `/hello` to the `index` action of a soon-to-be-created `HelloPhoenix.HelloController`.
 
