@@ -108,7 +108,7 @@ defmodule HelloPhoenix.Router do
 end
 
 ```
-Por hora, vamos ignorar os pipelines ea utilização de `scope` aqui e se concentrar apenas na adição de uma rota. (Cobrimos esse tópico no [Guia de Rotas](http://www.phoenixframework.org/docs/routing), se você está curioso.)
+Por hora, vamos ignorar os pipelines e a utilização de `scope` aqui e se concentrar apenas na adição de uma rota. (Cobrimos esse tópico no [Guia de Rotas](http://www.phoenixframework.org/docs/routing), se você está curioso.)
 
 Let's add a new route to the router that maps a `GET` request for `/hello` to the `index` action of a soon-to-be-created `HelloPhoenix.HelloController`.
 
@@ -127,9 +127,9 @@ scope "/", HelloPhoenix do
 end
 ```
 
-### A New Controller
+### Novo Controller
 
-Controllers are Elixir modules, and actions are Elixir functions defined in them. The purpose of actions is to gather any data and perform any tasks needed for rendering. Our route specifies that we need a `HelloPhoenix.HelloController` module with an `index/2` action.
+Controladores são módulos Elixir, e as ações são funções Elixir neles definidas. The purpose of actions is to gather any data and perform any tasks needed for rendering. Our route specifies that we need a `HelloPhoenix.HelloController` module with an `index/2` action.
 
 To make that happen, let's create a new `web/controllers/hello_controller.ex` file, and make it look like the following.
 
